@@ -1,7 +1,7 @@
 {
     "app-id": "com.elsevier.MendeleyDesktop",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.9",
+    "runtime-version": "5.10",
     "sdk": "org.kde.Sdk",
     "branch": "stable",
     "command": "mendeleydesktop",
