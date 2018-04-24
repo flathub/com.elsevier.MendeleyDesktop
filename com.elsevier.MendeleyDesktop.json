@@ -1,7 +1,7 @@
 {
     "app-id": "com.elsevier.MendeleyDesktop",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.10",
+    "runtime-version": "5.9",
     "sdk": "org.kde.Sdk",
     "branch": "stable",
     "command": "mendeleydesktop",
@@ -72,17 +72,17 @@
                     "type": "extra-data",
                     "filename": "mendeley.tar.bz2",
                     "only-arches": ["x86_64"],
-                    "url": "https://desktop-download.mendeley.com/download/linux/mendeleydesktop-1.18-linux-x86_64.tar.bz2",
-                    "sha256": "546f9f451daf0778a15f942b3a5ae3a015da23ff095a51a3a8cf0d4c406253bf",
-                    "size": 147509182
+                    "url": "https://desktop-download.mendeley.com/download/linux/mendeleydesktop-1.17.13-linux-x86_64.tar.bz2",
+                    "sha256": "d0f7d129562880026c8d5d0c4016787a208d72e879ccd9496b4ff393c408b091",
+                    "size": 126266490
                 },
                 {
                     "type": "extra-data",
                     "filename": "mendeley.tar.bz2",
                     "only-arches": ["i386"],
-                    "url": "https://desktop-download.mendeley.com/download/linux/mendeleydesktop-1.18-linux-i486.tar.bz2",
-                    "sha256": "d6a5b7f6a37e339204c3e583a2f6d377c1cc3132ff732fdeec808c390c2e3cf6",
-                    "size": 143543267
+                    "url": "https://desktop-download.mendeley.com/download/linux/mendeleydesktop-1.17.13-linux-i486.tar.bz2",
+                    "sha256": "fede3b1fd2eb87701d8c88a1e9e9a6ab5ec9caf9a31244259684865868e56350",
+                    "size": 131684415
                 }
             ]
         }
