@@ -73,17 +73,17 @@
                     "type": "extra-data",
                     "filename": "mendeley.tar.bz2",
                     "only-arches": ["x86_64"],
-                    "url": "https://desktop-download.mendeley.com/download/linux/mendeleydesktop-1.19.1-linux-x86_64.tar.bz2",
-                    "sha256": "6c6db49952fda5bcda59d6dd2f38467687494cca90473485f3630e672cc8cbe7",
-                    "size": 159305572
+                    "url": "https://desktop-download.mendeley.com/download/linux/mendeleydesktop-1.19.2-linux-x86_64.tar.bz2",
+                    "sha256": "7a8dfcae08cb3218ada0b4ba333906c0f5dc5cfc8c9bf11f7f73194018af5a7f",
+                    "size": 159146426
                 },
                 {
                     "type": "extra-data",
                     "filename": "mendeley.tar.bz2",
                     "only-arches": ["i386"],
-                    "url": "https://desktop-download.mendeley.com/download/linux/mendeleydesktop-1.19.1-linux-i486.tar.bz2",
-                    "sha256": "075b70ed2503b78fa20a44be2e56071f38f9258434337e9d362f620f208f9a9f",
-                    "size": 155368594
+                    "url": "https://desktop-download.mendeley.com/download/linux/mendeleydesktop-1.19.2-linux-i486.tar.bz2",
+                    "sha256": "0669c713e495d82456450be0a3ad53fbb0631ae4c28e9a97fa1f84fd5dd06b7b",
+                    "size": 155393374
                 }
             ]
         }
