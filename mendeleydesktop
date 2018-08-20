@@ -9,6 +9,5 @@ export MENDELEY_BUNDLED_SSL_LIB=/app/extra/lib/ssl
 export MENDELEY_LIB=/app/extra/lib
 export SCRIPT=/app/extra/bin/mendeleydesktop 
 export MENDELEY_BUNDLED_QT_PLUGIN_PATH=/app/extra/lib/mendeleydesktop/plugins
-export LD_LIBRARY_PATH=/usr/lib:/app/extra/lib/ssl:/app/extra/lib:/app/extra/lib/qt:/app/extra
-
+export LD_LIBRARY_PATH=/app/extra/lib/ssl:/app/extra/lib:/app/extra/lib/qt:/app/extra:/usr/lib
 /app/extra/lib/mendeleydesktop/libexec/mendeleydesktop.x86_64 $@
