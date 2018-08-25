@@ -11,9 +11,7 @@
         "--share=ipc",
         "--share=network",
         "--socket=x11",
-        "--socket=pulseaudio",
         "--device=dri",
-        "--device=all",
         "--talk-name=org.freedesktop.Notifications",
         "--talk-name=org.kde.StatusNotifierWatcher",
         "--filesystem=home"
