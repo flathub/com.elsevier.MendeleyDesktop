@@ -9,4 +9,9 @@ export MENDELEY_LIB=/app/extra/lib
 export SCRIPT=/app/extra/bin/mendeleydesktop 
 export MENDELEY_BUNDLED_QT_PLUGIN_PATH=/app/extra/lib/mendeleydesktop/plugins
 export LD_LIBRARY_PATH=/app/extra/lib/ssl:/app/extra/lib/qt:/app/extra/lib:/app/lib
-exec /app/extra/lib/mendeleydesktop/libexec/mendeleydesktop.x86_64 $@
+
+if [ -e /app/extra/lib/mendeleydesktop/libexec/mendeleydesktop.i486 ]; then
+  exec /app/extra/lib/mendeleydesktop/libexec/mendeleydesktop.i486 "$@"
+else
+  exec /app/extra/lib/mendeleydesktop/libexec/mendeleydesktop.x86_64 "$@"
+fi
