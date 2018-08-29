@@ -48,7 +48,7 @@
                     "commands": [
                         "ar x mendeleydesktop.deb",
                         "rm -f mendeleydesktop.deb",
-                        "tar xf data.tar.xz",
+                        "tar xf data.tar.xz --no-same-owner",
                         "rm -f control.tar.gz data.tar.xz debian-binary",
                         "mv opt/mendeleydesktop/* .",
                         "rm -rf apt opt usr",
