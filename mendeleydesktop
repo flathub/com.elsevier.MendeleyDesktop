@@ -8,4 +8,5 @@ export MENDELEY_BUNDLED_QT_LIBRARY=/app/extra/lib/qt
 export MENDELEY_BUNDLED_QT_PLUGIN=/app/extra/plugins/qt/plugins
 export MENDELEY_BUNDLED_QT_PLUGIN_PATH=/app/extra/plugins/qt/plugins
 export LD_LIBRARY_PATH=/app/extra/lib/ssl:/app/extra/lib/qt:/app/extra/lib:/app/lib
+export XDG_DATA_DIRS=/app/extra/share:/app/share:/usr/share:/usr/share/runtime/share:/run/host/share
 exec /app/extra/bin/mendeleydesktop "$@"
