@@ -37,15 +37,21 @@
                 "install mendeleydesktop /app/bin",
                 "install -Dm644 com.elsevier.MendeleyDesktop.appdata.xml /app/share/appdata/com.elsevier.MendeleyDesktop.appdata.xml",
                 "install -Dm644 mendeleydesktop-64.png /app/share/icons/hicolor/64x648/apps/com.elsevier.MendeleyDesktop.png",
-                "install -Dm644 mendeleydesktop-128.png /app/share/icons/hicolor/128x128/apps/com.elsevier.MendeleyDesktop.png"
+                "install -Dm644 mendeleydesktop-128.png /app/share/icons/hicolor/128x128/apps/com.elsevier.MendeleyDesktop.png",
+                "cp /usr/bin/ar /app/bin",
+                "ARCH_TRIPLE=$(gcc --print-multiarch) && cp /usr/lib/${ARCH_TRIPLE}/libbfd-*.so /app/lib"
             ],
             "sources": [
                 {
                     "type": "script",
                     "dest-filename": "apply_extra",
                     "commands": [
-                        "tar jxf mendeley.tar.bz2 --strip-components=1 --no-same-owner",
-                        "rm -f mendeley.tar.bz2",
+                        "ar x mendeleydesktop.deb",
+                        "rm -f mendeleydesktop.deb",
+                        "tar xf data.tar.xz --no-same-owner",
+                        "rm -f control.tar.gz data.tar.xz debian-binary",
+                        "mv opt/mendeleydesktop/* .",
+                        "rm -rf apt opt usr",
                         "mkdir -p export/share/applications",
                         "sed s/Icon=mendeleydesktop/Icon=com.elsevier.MendeleyDesktop/ share/applications/mendeleydesktop.desktop > export/share/applications/com.elsevier.MendeleyDesktop.desktop",
                         "echo StartupWMClass=Mendeley Desktop >> export/share/applications/com.elsevier.MendeleyDesktop.desktop"
@@ -69,19 +75,19 @@
                 },
                 {
                     "type": "extra-data",
-                    "filename": "mendeley.tar.bz2",
+                    "filename": "mendeleydesktop.deb",
                     "only-arches": ["x86_64"],
-                    "url": "https://desktop-download.mendeley.com/download/linux/mendeleydesktop-1.19.2-linux-x86_64.tar.bz2",
-                    "sha256": "7a8dfcae08cb3218ada0b4ba333906c0f5dc5cfc8c9bf11f7f73194018af5a7f",
-                    "size": 159146426
+                    "url": "https://desktop-download.mendeley.com/download/apt/pool/main/m/mendeleydesktop/mendeleydesktop_1.19.2-stable_amd64.deb",
+                    "sha256": "f053b32ca1ef6dafee1593982e2d9d4265d77292b9c3cd06b56212a691f9571d",
+                    "size": 123801278
                 },
                 {
                     "type": "extra-data",
-                    "filename": "mendeley.tar.bz2",
+                    "filename": "mendeleydesktop.deb",
                     "only-arches": ["i386"],
-                    "url": "https://desktop-download.mendeley.com/download/linux/mendeleydesktop-1.19.2-linux-i486.tar.bz2",
-                    "sha256": "0669c713e495d82456450be0a3ad53fbb0631ae4c28e9a97fa1f84fd5dd06b7b",
-                    "size": 155393374
+                    "url": "https://desktop-download.mendeley.com/download/apt/pool/main/m/mendeleydesktop/mendeleydesktop_1.19.2-stable_i386.deb",
+                    "sha256": "a586077b5623fc80707b2886565241414a08afa92a5c458c5c790e39594bf087",
+                    "size": 123230420
                 }
             ]
         }
