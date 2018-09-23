@@ -1,8 +1,8 @@
 {
     "app-id": "com.elsevier.MendeleyDesktop",
-    "runtime": "org.kde.Platform",
-    "runtime-version": "5.11",
-    "sdk": "org.kde.Sdk",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "18.08",
+    "sdk": "org.freedesktop.Sdk",
     "branch": "stable",
     "command": "mendeleydesktop",
     "separate-locales": false,
