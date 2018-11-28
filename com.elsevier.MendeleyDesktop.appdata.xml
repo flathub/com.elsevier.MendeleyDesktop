@@ -22,9 +22,10 @@
     </screenshot>
   </screenshots>
   <releases>
-		<release version="1.19.2" date="2018-08-13"/>
-		<release version="1.19.1" date="2018-07-04"/>
-		<release version="1.17.13" date="2017-12-19"/>
+    <release date="2018-11-28" version="1.19.3"/>
+    <release date="2018-08-13" version="1.19.2"/>
+    <release date="2018-07-04" version="1.19.1"/>
+    <release date="2017-12-19" version="1.17.13"/>
   </releases>
   <categories>
     <category>Education</category>
@@ -33,6 +34,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LicenseRef-proprietary</project_license>
   <url type="homepage">https://www.mendeley.com</url>
+
   <!-- These are the icons for the android  apps, from https://play.google.com/store/apps/details?id=com.mendeley -->
   <icon type="remote" height="64" width="64">https://lh3.googleusercontent.com/KdvN1UJWNw6sBlH80T3RO01SM0OmDRlli_vq9ShVEL6SAoekKVmAPAoQGgfF8CFrCtc=w64</icon>
   <icon type="remote" height="128" width="128">https://lh3.googleusercontent.com/KdvN1UJWNw6sBlH80T3RO01SM0OmDRlli_vq9ShVEL6SAoekKVmAPAoQGgfF8CFrCtc=w128</icon>
