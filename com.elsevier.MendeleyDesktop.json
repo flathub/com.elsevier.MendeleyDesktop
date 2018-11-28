@@ -3,7 +3,6 @@
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "18.08",
     "sdk": "org.freedesktop.Sdk",
-    "branch": "stable",
     "command": "mendeleydesktop",
     "separate-locales": false,
     "tags": ["proprietary"],
@@ -74,17 +73,17 @@
                     "type": "extra-data",
                     "filename": "mendeleydesktop.deb",
                     "only-arches": ["x86_64"],
-                    "url": "https://desktop-download.mendeley.com/download/apt/pool/main/m/mendeleydesktop/mendeleydesktop_1.19.2-stable_amd64.deb",
-                    "sha256": "f053b32ca1ef6dafee1593982e2d9d4265d77292b9c3cd06b56212a691f9571d",
-                    "size": 123801278
+                    "url": "https://desktop-download.mendeley.com/download/apt/pool/main/m/mendeleydesktop/mendeleydesktop_1.19.3-stable_amd64.deb",
+                    "sha256": "734026dcab2eb1fc764104b1503e50f154a8f6d20353580aeb6c4c9985326a58",
+                    "size": 123832988
                 },
                 {
                     "type": "extra-data",
                     "filename": "mendeleydesktop.deb",
                     "only-arches": ["i386"],
-                    "url": "https://desktop-download.mendeley.com/download/apt/pool/main/m/mendeleydesktop/mendeleydesktop_1.19.2-stable_i386.deb",
-                    "sha256": "a586077b5623fc80707b2886565241414a08afa92a5c458c5c790e39594bf087",
-                    "size": 123230420
+                    "url": "https://desktop-download.mendeley.com/download/apt/pool/main/m/mendeleydesktop/mendeleydesktop_1.19.3-stable_i386.deb",
+                    "sha256": "0cb598daa0a27db67a9244d7817a8c7b79ff938060975588e385799c8e8751ac",
+                    "size": 123240048
                 }
             ]
         }
