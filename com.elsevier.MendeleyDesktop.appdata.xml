@@ -18,7 +18,7 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image>http://static.blog.mendeley.com/wp-content/uploads/2012/06/1.6-dev2-mac.png</image>
+      <image type="source">https://raw.githubusercontent.com/flathub/com.elsevier.MendeleyDesktop/master/mendeley-screenshot.png</image>
     </screenshot>
   </screenshots>
   <releases>
