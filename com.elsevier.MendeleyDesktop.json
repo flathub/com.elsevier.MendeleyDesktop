@@ -73,9 +73,9 @@
                     "type": "extra-data",
                     "filename": "mendeleydesktop.deb",
                     "only-arches": ["x86_64"],
-                    "url": "https://desktop-download.mendeley.com/download/apt/pool/main/m/mendeleydesktop/mendeleydesktop_1.19.4-stable_amd64.deb",
-                    "sha256": "7ec9e38360f38065667dcd8b8bd350e70438780f83fca03bd5a11a3d3304cae4",
-                    "size": 123820898
+                    "url": "https://desktop-download.mendeley.com/download/apt/pool/main/m/mendeleydesktop/mendeleydesktop_1.19.5-stable_amd64.deb",
+                    "sha256": "3e07fc5e98d096815fe470b2812051634b9ea1c30b8c7f9254f6c7df01c64fb1",
+                    "size": 124074630
                 }
             ]
         }
