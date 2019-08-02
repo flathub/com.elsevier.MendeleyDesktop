@@ -12,7 +12,7 @@ In order to use LibreOffice plugin, please do the following steps:
 
 * Install it
 
-* **Note**: Inserting bibligraphy may not work correctly, see https://github.com/flathub/com.elsevier.MendeleyDesktop/issues/22
+* **Note**: If using LibreOffice from flatpak, you have to allow it to access /tmp from host, i.e. `flatpak override --filesystem=/tmp org.libreoffice.LibreOffice`
 
 Reference:
 https://blog.kukuh.syafaat.id/2018/LibreOffice-and-Mendeley-Desktop-Flatpak/

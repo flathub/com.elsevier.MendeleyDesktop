@@ -13,7 +13,8 @@
         "--device=dri",
         "--talk-name=org.freedesktop.Notifications",
         "--talk-name=org.kde.StatusNotifierWatcher",
-        "--filesystem=home"
+        "--filesystem=home",
+        "--filesystem=/tmp"
     ],
     "cleanup": ["/include",
                 "/lib/pkgconfig",
