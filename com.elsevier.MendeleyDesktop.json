@@ -1,7 +1,8 @@
 {
     "app-id": "com.elsevier.MendeleyDesktop",
+    "branch": "beta",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "18.08",
+    "runtime-version": "19.08beta",
     "sdk": "org.freedesktop.Sdk",
     "command": "mendeleydesktop",
     "separate-locales": false,
@@ -27,7 +28,6 @@
                 "*.la",
                 "*.a"],
     "modules": [
-        "shared-modules/udev/udev-175.json",
         {
             "name": "mendeley",
             "buildsystem": "simple",
