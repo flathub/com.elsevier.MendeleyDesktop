@@ -1,7 +1,7 @@
 {
     "app-id": "com.elsevier.MendeleyDesktop",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "18.08",
+    "runtime-version": "19.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "mendeleydesktop",
     "separate-locales": false,
@@ -27,7 +27,6 @@
                 "*.la",
                 "*.a"],
     "modules": [
-        "shared-modules/udev/udev-175.json",
         {
             "name": "mendeley",
             "buildsystem": "simple",
@@ -50,15 +49,11 @@
                         "rm -f control.tar.gz data.tar.xz debian-binary",
                         "mv opt/mendeleydesktop/* .",
                         "rm -rf apt opt usr",
-
                         "mkdir -p export/share/applications",
                         "sed s/Icon=mendeleydesktop/Icon=com.elsevier.MendeleyDesktop/ share/applications/mendeleydesktop.desktop > export/share/applications/com.elsevier.MendeleyDesktop.desktop",
                         "echo StartupWMClass=Mendeley Desktop >> export/share/applications/com.elsevier.MendeleyDesktop.desktop",
                         "rm -rf share/applications",
-
-                        "for size in 16 22 32 48 64 128; do
-                            install -Dm644 share/icons/hicolor/${size}x${size}/apps/mendeleydesktop.png export/share/icons/hicolor/${size}x${size}/apps/com.elsevier.MendeleyDesktop.png
-                        done",
+                        "for size in 16 22 32 48 64 128; do install -Dm644 share/icons/hicolor/${size}x${size}/apps/mendeleydesktop.png export/share/icons/hicolor/${size}x${size}/apps/com.elsevier.MendeleyDesktop.png; done",
                         "rm -rf share/icons"
                     ]
                 },
