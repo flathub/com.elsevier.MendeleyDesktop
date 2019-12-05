@@ -11,6 +11,10 @@ finish-args:
   - --share=network
   - --socket=x11
   - --device=dri
+  - --talk-name=org.freedesktop.Notifications
+  - --talk-name=org.kde.StatusNotifierWatcher
+  - --filesystem=home
+  - --filesystem=/tmp
 modules:
   - name: mendeley
     buildsystem: simple
@@ -27,17 +31,19 @@ modules:
       - install -Dm644 share/icons/hicolor/128x128/apps/mendeleydesktop.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.png
       - cp -r share/mendeleydesktop/* /app/share/mendeleydesktop
     sources:
-    - only-arches: [i386]
-      type: archive
+    - type: archive
+      only-arches: [i386]
       url: https://desktop-download.mendeley.com/download/linux/mendeleydesktop-1.19.4-linux-i486.tar.bz2
       sha256: 00e8047d1c2cb71db7ded001841e95d37415c72884403bdcb24bb99895f090d3
-#      x-checker-data:
-#	type: rotating-url
-#	url: https://www.mendeley.com/autoupdates/installer/Linux-x86/stable-incoming
-    - only-arches: [x86_64]
-      type: archive
+      x-checker-data:
+	      type: rotating-url
+	      url: https://www.mendeley.com/autoupdates/installer/Linux-x86/stable-incoming
+    - type: archive
+      only-arches: [x86_64]
       url: https://desktop-download.mendeley.com/download/linux/mendeleydesktop-1.19.4-linux-x86_64.tar.bz2
       sha256: 9700f2db273bb364aadb92535ba40349626193e0ba5ff8544ce22b665d5d7dd9
-#      x-checker-data:
-#	type: rotating-url
-#	url: https://www.mendeley.com/autoupdates/installer/Linux-x64/stable-incoming
+      x-checker-data:
+        type: rotating-url
+        url: https://www.mendeley.com/autoupdates/installer/Linux-x64/stable-incoming
+    - type: file
+      path: com.elsevier.MendeleyDesktop.appdata.xml
