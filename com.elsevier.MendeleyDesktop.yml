@@ -21,6 +21,7 @@ modules:
     build-commands:
       - mkdir -p /app/bin
       - install bin/mendeleydesktop /app/bin
+      - mkdir -p /app/lib
       - cp -r lib/* /app/lib
       - install -Dm644 share/applications/mendeleydesktop.desktop /app/share/appdata/com.elsevier.MendeleyDesktop.appdata.xml
       - install -Dm644 share/icons/hicolor/16x16/apps/mendeleydesktop.png ${FLATPAK_DEST}/share/icons/hicolor/16x16/apps/${FLATPAK_ID}.png
