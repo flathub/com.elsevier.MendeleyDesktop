@@ -36,8 +36,8 @@ modules:
       url: https://desktop-download.mendeley.com/download/linux/mendeleydesktop-1.19.4-linux-i486.tar.bz2
       sha256: 00e8047d1c2cb71db7ded001841e95d37415c72884403bdcb24bb99895f090d3
       x-checker-data:
-	      type: rotating-url
-	      url: https://www.mendeley.com/autoupdates/installer/Linux-x86/stable-incoming
+        type: rotating-url
+        url: https://www.mendeley.com/autoupdates/installer/Linux-x86/stable-incoming
     - type: archive
       only-arches: [x86_64]
       url: https://desktop-download.mendeley.com/download/linux/mendeleydesktop-1.19.4-linux-x86_64.tar.bz2
