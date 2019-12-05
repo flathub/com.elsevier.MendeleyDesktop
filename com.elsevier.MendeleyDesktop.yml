@@ -30,6 +30,7 @@ modules:
       - install -Dm644 share/icons/hicolor/48x48/apps/mendeleydesktop.png ${FLATPAK_DEST}/share/icons/hicolor/48x48/apps/${FLATPAK_ID}.png
       - install -Dm644 share/icons/hicolor/64x64/apps/mendeleydesktop.png ${FLATPAK_DEST}/share/icons/hicolor/64x64/apps/${FLATPAK_ID}.png
       - install -Dm644 share/icons/hicolor/128x128/apps/mendeleydesktop.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.png
+      - mkdir -p /app/share/mendeleydesktop
       - cp -r share/mendeleydesktop/* /app/share/mendeleydesktop
     sources:
     - type: archive
