@@ -23,6 +23,8 @@
   </screenshots>
   <releases>
     <release version="1.19.4" date="2019-04-08"/>
+    <release date="2019-05-02" version="1.19.5"/>
+    <release date="2019-04-08" version="1.19.4"/>
     <release date="2018-11-28" version="1.19.3"/>
     <release date="2018-08-13" version="1.19.2"/>
     <release date="2018-07-04" version="1.19.1"/>
