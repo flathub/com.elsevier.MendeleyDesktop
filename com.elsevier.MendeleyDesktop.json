@@ -78,7 +78,14 @@
                     ],
                     "url": "https://desktop-download.mendeley.com/download/apt/pool/main/m/mendeleydesktop/mendeleydesktop_1.19.5-stable_amd64.deb",
                     "sha256": "3e07fc5e98d096815fe470b2812051634b9ea1c30b8c7f9254f6c7df01c64fb1",
-                    "size": 124074630
+                    "size": 124074630,
+                    "x-checker-data": {
+                        "type": "debian-repo",
+                        "package-name": "mendeleydesktop",
+                        "root": "https://desktop-download.mendeley.com/download/apt",
+                        "dist": "stable",
+                        "component": "main"
+                    }
                 }
             ]
         }
