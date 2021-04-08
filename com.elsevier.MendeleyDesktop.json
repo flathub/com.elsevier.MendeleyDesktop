@@ -48,7 +48,7 @@
                     "type": "script",
                     "dest-filename": "apply_extra",
                     "commands": [
-                        "ar x mendeleydesktop.deb",
+                        "LD_LIBRARY_PATH=/app/lib ar x mendeleydesktop.deb",
                         "rm -f mendeleydesktop.deb",
                         "tar xf data.tar.xz --no-same-owner",
                         "rm -f control.tar.gz data.tar.xz debian-binary",
