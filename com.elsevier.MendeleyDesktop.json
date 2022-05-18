@@ -59,7 +59,8 @@
                         "echo StartupWMClass=Mendeley Desktop >> export/share/applications/com.elsevier.MendeleyDesktop.desktop",
                         "rm -rf share/applications",
                         "for size in 16 22 32 48 64 128; do install -Dm644 share/icons/hicolor/${size}x${size}/apps/mendeleydesktop.png export/share/icons/hicolor/${size}x${size}/apps/com.elsevier.MendeleyDesktop.png; done",
-                        "rm -rf share/icons"
+                        "rm -rf share/icons",
+                        "rm -rf bin/install-mendeley-link-handler.sh"
                     ]
                 },
                 {
