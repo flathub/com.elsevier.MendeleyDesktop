@@ -1,7 +1,7 @@
 {
     "app-id": "com.elsevier.MendeleyDesktop",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "21.08",
+    "runtime-version": "23.08beta",
     "sdk": "org.freedesktop.Sdk",
     "command": "mendeleydesktop",
     "separate-locales": false,
