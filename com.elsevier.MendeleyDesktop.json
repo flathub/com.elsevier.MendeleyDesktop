@@ -14,9 +14,7 @@
         "--socket=x11",
         "--device=dri",
         "--talk-name=org.freedesktop.Notifications",
-        "--talk-name=org.kde.StatusNotifierWatcher",
-        "--filesystem=home",
-        "--filesystem=/tmp"
+        "--talk-name=org.kde.StatusNotifierWatcher"
     ],
     "cleanup": [
         "/include",
@@ -35,10 +33,11 @@
             "name": "mendeley",
             "buildsystem": "simple",
             "build-commands": [
-                "mkdir -p /app/bin",
-                "install apply_extra /app/bin",
-                "install mendeleydesktop /app/bin",
+                "install -Dm755 apply_extra /app/bin/apply_extra",
+                "install -Dm755 mendeleydesktop /app/bin",
                 "install -Dm644 com.elsevier.MendeleyDesktop.appdata.xml /app/share/appdata/com.elsevier.MendeleyDesktop.appdata.xml",
+                "install -Dm644 com.elsevier.MendeleyDesktop.desktop /app/share/applications/com.elsevier.MendeleyDesktop.desktop",
+                "install -Dm644 mendeleydesktop.png /app/share/icons/hicolor/128x128/apps/com.elsevier.MendeleyDesktop.png",
                 "cp /usr/bin/ar /app/bin",
                 "mkdir -p /app/lib",
                 "ARCH_TRIPLE=$(gcc --print-multiarch) && cp /usr/lib/${ARCH_TRIPLE}/libbfd-*.so /app/lib"
@@ -54,12 +53,6 @@
                         "rm -f control.tar.gz data.tar.xz debian-binary",
                         "mv opt/mendeleydesktop/* .",
                         "rm -rf apt opt usr",
-                        "mkdir -p export/share/applications",
-                        "sed s/Icon=mendeleydesktop/Icon=com.elsevier.MendeleyDesktop/ share/applications/mendeleydesktop.desktop > export/share/applications/com.elsevier.MendeleyDesktop.desktop",
-                        "echo StartupWMClass=Mendeley Desktop >> export/share/applications/com.elsevier.MendeleyDesktop.desktop",
-                        "rm -rf share/applications",
-                        "for size in 16 22 32 48 64 128; do install -Dm644 share/icons/hicolor/${size}x${size}/apps/mendeleydesktop.png export/share/icons/hicolor/${size}x${size}/apps/com.elsevier.MendeleyDesktop.png; done",
-                        "rm -rf share/icons",
                         "rm -rf bin/install-mendeley-link-handler.sh"
                     ]
                 },
@@ -70,6 +63,14 @@
                 {
                     "type": "file",
                     "path": "com.elsevier.MendeleyDesktop.appdata.xml"
+                },
+                {
+                    "type": "file",
+                    "path": "com.elsevier.MendeleyDesktop.desktop"
+                },
+                {
+                    "type": "file",
+                    "path": "mendeleydesktop.png"
                 },
                 {
                     "type": "extra-data",
