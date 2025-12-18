@@ -1,4 +1,7 @@
+### This application is no longer maintained.
+
 # com.elsevier.MendeleyDesktop
+
 
 For installation instructions, please visit app page on flathub at https://flathub.org/apps/details/com.elsevier.MendeleyDesktop
 
